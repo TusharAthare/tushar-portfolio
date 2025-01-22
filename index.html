@@ -10,41 +10,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-content">
-            <div class="logo">
-                <a href="#home">
-                    <div class="logo-container">
-                        <span class="logo-bracket">{</span>
-                        <span class="logo-name">TA</span>
-                        <span class="logo-bracket">}</span>
-                        <span class="logo-cursor">_</span>
-                    </div>
-                </a>
+    <!-- Add after opening body tag -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <div class="nav-content">
+                <div class="logo-container"
+                    <a href="#" class="logo-name">
+                        <img src="./assets/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#blog">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
             <h1>Tushar Athare</h1>
             <p>Software Development Engineer II | Back-End Development | Data Engineering</p>
             <div class="social-links">
-                <a href="https://linkedin.com/in/tusharathare" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/TusharAthare" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://medium.com/@tusharathare18" target="_blank"><i class="fab fa-medium"></i></a>
-                <a href="mailto:tusharathare18@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://medium.com/@yourprofile" target="_blank">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <a href="./assets/Tushar's Resume.pdf" download class="download-resume">
+            <a href="./assets/Tushar's Resume.pdf" class="download-resume" download>
                 <i class="fas fa-download"></i> Download Resume
             </a>
         </div>
@@ -131,30 +147,120 @@
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Languages & Frameworks</h3>
-                <ul>
-                    <li><i class="devicon-python-plain colored"></i> Python</li>
-                    <li><i class="devicon-django-plain colored"></i> Django</li>
-                    <li><i class="devicon-postgresql-plain colored"></i> SQL</li>
-                    <li><i class="devicon-graphql-plain colored"></i> GraphQL</li>
-                </ul>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Django</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>SQL</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>GraphQL</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
             </div>
             <div class="skill-category">
                 <h3>Data Engineering</h3>
-                <ul>
-                    <li><i class="devicon-apache-plain colored"></i> Apache Spark</li>
-                    <li><i class="devicon-pandas-plain colored"></i>Pandas</li>
-                    <li><i class="devicon-numpy-plain colored"></i>NumPy</li>
-                    <li><img src="./assets/dask.svg" class="tech-icon" alt="dask"> Dask</li>
-                </ul>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Apache Spark</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Pandas</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>NumPy</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Dask</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
             </div>
             <div class="skill-category">
                 <h3>DevOps & Databases</h3>
-                <ul>
-                    <li><i class="devicon-docker-plain colored"></i> Docker</li>
-                    <li><i class="devicon-kubernetes-plain colored"></i> Kubernetes</li>
-                    <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
-                    <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
-                </ul>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Docker</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Kubernetes</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>PostgreSQL</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MongoDB</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -178,6 +284,14 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid">
+            <!-- Blog cards will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Get In Touch</h2>
@@ -195,6 +309,12 @@
     <footer>
         <p>&copy; 2025 Tushar Athare. All rights reserved.</p>
     </footer>
+
+    <!-- Add particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- Add particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <script src="./js/script.js"></script>
 </body>
